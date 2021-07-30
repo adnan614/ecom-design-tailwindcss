@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- header -->
+
+ <header class=" py-4 shadow-sm bg-white">
+       <div class="container flex items-center justify-between">
+            <!-- Logo -->
+
+           <a href="#">
+              <img src="../images/images/logo.svg" class="w-32" />
+           </a>
+            <!-- Search Bar -->
+           <div class=" w-full flex max-w-xl relative">
+               <span class="absolute left-4 top-3 text-lg text-gray-400">
+                   <i class="fas fa-search"></i>
+               </span>
+               <input type="text" class=" w-full border border-primary border-r-0 pl-12 py-3  rounded-l-md focus\:outline-black" placeholder="search">
+               <button class=" bg-primary border border-primary text-white px-8
+                rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+           </div>
+
+            <!-- Icons -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class=" text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">WishList</div>
+                       <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-xs text-white">8</span>         
+                </a>
+                <a href="#" class=" text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                       <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex  justify-center bg-primary text-xs text-white">8</span>         
+                </a>
+                <a href="#" class=" text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                      
+                </a>
+            </div>
+       </div>
+ </header>
+<!-- header end --> 
+
+<!--Nav Bar-->
+<nav class="bg-gray-800">
+  <div class="container flex">
+       <div class="px-8 py-4 flex items-center bg-primary cursor-pointer relative group">
+           <span class="text-white">
+               <i class="fas fa-bars"></i>
+           </span>
+           <span class=" capitalize ml-2 text-white">All Categories</span>
+           <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 trasition duration-300 invisible group-hover:visible">
+              <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                  <img src="../images/images/icons/bed.svg" class="w-5 h-5 object-contain">
+                  <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+              </a> 
+               <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                  <img src="../images/images/icons/sofa.svg" class="w-5 h-5 object-contain">
+                  <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+              </a>
+               <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                  <img src="../images/images/icons/office.svg" class="w-5 h-5 object-contain">
+                  <span class="ml-6 text-gray-600 text-sm">Office</span>
+              </a>
+               <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                  <img src="../images/images/icons/outdoor-cafe.svg" class="w-5 h-5 object-contain">
+                  <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+              </a>
+              <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                  <img src="../images/images/icons/service-hours.svg" class="w-5 h-5 object-contain">
+                  <span class="ml-6 text-gray-600 text-sm">Mattress</span>
+              </a>
+              <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                  <img src="../images/images/icons/restaurant.svg" class="w-5 h-5 object-contain">
+                  <span class="ml-6 text-gray-600 text-sm">Dinning</span>
+              </a>
+           </div>
+       </div>
+       <div class="flex items-center justify-between flex-grow pl-12">
+          <div class="flex items-center space-x-6 capitalize">
+            <a href="#" class=" text-gray-200 hover:text-white transition">Home</a>
+            <a href="#" class=" text-gray-200 hover:text-white transition">Shop</a>
+            <a href="#" class=" text-gray-200 hover:text-white transition">About Us</a>
+            <a href="#" class=" text-gray-200 hover:text-white transition">Contact Us</a>
+          </div>
+            <a href="#" class=" text-gray-200 hover:text-white transition ">Login/Register</a>
+         
+       </div> 
+  </div>
+</nav>
+
+<!--Nav Bar end-->
+<!-- breadcrums -->
+
+<div class="container py-4 flex items-center gap-3">
+    <a href="#" class="text-primary text-base">
+       <i class="fas fa-home"></i>
+    </a>
+    <span class="text-sm text-gray-400">
+        <i class="fas fa-chevron-right"></i>
+    </span>
+      <p class="text-gray-600 font-medium">Shop</p>
+
+</div>
+
+<!-- breadcrums end-->
+
+<!-- shop wrapper -->
+
+<div class="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
+    <!--sidebar-->
+   <div class="col-span-1 px-4 pb-6 shadow rounded overflow-hidden">
+        <div class="divide-y divide-gray-200 space-y-5">
+            <div>
+                <h3 class="text-xl text-gray-800 mb-3 uppercase font-semibold" >Categories</h3>
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                        <label class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                        <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                        <label class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                        <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                        <label class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                        <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                        <label class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                        <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                    </div>
+                </div>
+            </div>
+             <div class="pt-4">
+                <h3 class="text-xl text-gray-800 mb-3 uppercase font-semibold">Brands</h3>
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                        <label class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                        <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                        <label class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                        <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                        <label class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                        <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                        <label class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                        <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- price Filter -->
+              <div class="pt-4">
+                  <h3 class="text-xl text-gray-800 mb-3 uppercase font-semibold">Price</h3>
+                  <div class="mt-4 flex items-center">
+                       <input type="text" class="w-full border border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm shadow-sm rounded" placeholder="min">
+                       <span class="mx-3 text-gray-500">-</span>
+                       <input type="text" class="w-full border border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm shadow-sm rounded" placeholder="max">
+                  </div>
+              </div> 
+              
+            <!-- price Filter End -->
+
+            <!-- size filter -->
+            <div class="pt-4">
+                 <h3 class="text-xl text-gray-800 mb-3 uppercase font-semibold">Size</h3>
+                 <div class="mt-4 flex items-center gap-2">
+                   <div class="size-selector ">
+                       <input type="radio" name="size" class="hidden" id="size-xs">
+                       <label for="size-xs" class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm">XS</label>
+                   </div>
+                   <div class="size-selector ">
+                       <input type="radio" name="size" class="hidden" id="size-s">
+                       <label for="size-s" class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm">S</label>
+                   </div>
+                   <div class="size-selector ">
+                       <input type="radio" name="size" class="hidden" id="size-m">
+                       <label for="size-m" class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm">M</label>
+                   </div>
+                   <div class="size-selector ">
+                       <input type="radio" name="size" class="hidden" id="size-l">
+                       <label for="size-l" class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm">L</label>
+                   </div>
+                   <div class="size-selector ">
+                       <input type="radio" name="size" class="hidden" id="size-xl">
+                       <label for="size-xl" class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm">XL</label>
+                   </div>
+                 </div>
+            </div>
+            <!-- size filter end -->
+
+            <!-- color filter -->
+              <div class="pt-4">
+                   <h3 class="text-xl text-gray-800 mb-3 uppercase font-semibold">Color</h3>
+                   <div class="flex items-center gap-2">
+                       <div class="color-selector">
+                           <input type="radio" name="color" class="hidden" id="color-red">
+                           <label for="color-red" class="border border-gray-200 rounded-sm h-5 w-5 cursor-pointer shadow-sm block"  style="background-color: #fc3d57"></label>
+                       </div>
+                        <div class="color-selector">
+                           <input type="radio" name="color" class="hidden" id="color-white">
+                           <label for="color-white" class="border border-gray-200 rounded-sm h-5 w-5 cursor-pointer shadow-sm block"  style="background-color: #fff"></label>
+                       </div>
+                        <div class="color-selector">
+                           <input type="radio" name="color" class="hidden" id="color-black">
+                           <label for="color-black" class="border border-gray-200 rounded-sm h-5 w-5 cursor-pointer shadow-sm block"  style="background-color: #000"></label>
+                       </div>
+                   </div>
+              </div>
+            <!-- color filter end -->
+
+        </div>
+   </div>  
+   <!--sidebar end--> 
+    <!--product wrapper-->
+    <div class="col-span-3">
+        <div class="flex items-center mb-4">
+          <select class="w-44 text-sm px-4 py-3 text-gray-600 border border-gray-300 shadow-sm rounded focus:ring-primary focus:border-primary">
+              <option>Default sorting</option>
+              <option>Price low-high</option>
+              <option>Price high-low</option>
+              <option>Latest Product</option>
+          </select>
+          <div class="flex gap-2 ml-auto">
+            <div class="border border-primary w-10 h-9 flex items-center justify-center text-white bg-primary rounded cursor-pointer">
+                 <i class="fas fa-th"></i>
+            </div> 
+            <div class="border border-primary w-10 h-9 flex items-center justify-center text-gray-600  rounded cursor-pointer">
+                 <i class="fas fa-list"></i>
+            </div> 
+          </div>
+          </div>
+
+          <!--product grid-->
+          <div class="grid grid-cols-3 gap-6">
+       <div class="bg-white shadow rounded group">
+           <div class="relative">
+               <img src="../images/images/products/product1.jpg" class="w-full" >
+               <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 gap-3 opacity-0 group-hover:opacity-100 transition">
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="fas fa-search"></i>    
+                   </a>
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="far fa-heart"></i>    
+                   </a>
+               </div>
+           </div>
+           <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                   <h4 class="uppercase font-bold text-xl mb-2 text-gray-800 hover: text-primary transition">guyer chair</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-primary text-xl font-semibold">$45.00</p>
+                    <p class="text-sm text-gray-400 line-through">$55.00</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <span class="text-xs-text-gray-500">(150)</span>
+                </div>
+                 
+           </div>
+           <a href="#" class="block w-full py-1 text-white text-center bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add to Cart</a>
+          
+        </div> 
+        <div class="bg-white shadow rounded group">
+           <div class="relative">
+               <img src="../images/images/products/product2.jpg" class="w-full" >
+               <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 gap-3 opacity-0 group-hover:opacity-100 transition">
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="fas fa-search"></i>    
+                   </a>
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="far fa-heart"></i>    
+                   </a>
+               </div>
+           </div>
+           <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                   <h4 class="uppercase font-bold text-xl mb-2 text-gray-800 hover: text-primary transition">guyer chair</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-primary text-xl font-semibold">$45.00</p>
+                    <p class="text-sm text-gray-400 line-through">$55.00</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <span class="text-xs-text-gray-500">(150)</span>
+                </div>
+                 
+           </div>
+           <a href="#" class="block w-full py-1 text-white text-center bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add to Cart</a>
+          
+        </div> 
+        <div class="bg-white shadow rounded group">
+           <div class="relative">
+               <img src="../images/images/products/product3.jpg" class="w-full" >
+               <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 gap-3 opacity-0 group-hover:opacity-100 transition">
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="fas fa-search"></i>    
+                   </a>
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="far fa-heart"></i>    
+                   </a>
+               </div>
+           </div>
+           <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                   <h4 class="uppercase font-bold text-xl mb-2 text-gray-800 hover: text-primary transition">guyer chair</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-primary text-xl font-semibold">$45.00</p>
+                    <p class="text-sm text-gray-400 line-through">$55.00</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <span class="text-xs-text-gray-500">(150)</span>
+                </div>
+                 
+           </div>
+           <a href="#" class="block w-full py-1 text-white text-center bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add to Cart</a>
+          
+        </div>
+        <div class="bg-white shadow rounded group">
+           <div class="relative">
+               <img src="../images/images/products/product4.jpg" class="w-full">
+               <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 gap-3 opacity-0 group-hover:opacity-100 transition">
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="fas fa-search"></i>    
+                   </a>
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="far fa-heart"></i>    
+                   </a>
+               </div>
+           </div>
+           <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                   <h4 class="uppercase font-bold text-xl mb-2 text-gray-800 hover: text-primary transition">guyer chair</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-primary text-xl font-semibold">$45.00</p>
+                    <p class="text-sm text-gray-400 line-through">$55.00</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <span class="text-xs-text-gray-500">(150)</span>
+                </div>
+                 
+           </div>
+           <a href="#" class="block w-full py-1 text-white text-center bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add to Cart</a>
+          
+        </div>
+        <div class="bg-white shadow rounded group">
+           <div class="relative">
+               <img src="../images/images/products/product4.jpg" class="w-full">
+               <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 gap-3 opacity-0 group-hover:opacity-100 transition">
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="fas fa-search"></i>    
+                   </a>
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="far fa-heart"></i>    
+                   </a>
+               </div>
+           </div>
+           <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                   <h4 class="uppercase font-bold text-xl mb-2 text-gray-800 hover: text-primary transition">guyer chair</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-primary text-xl font-semibold">$45.00</p>
+                    <p class="text-sm text-gray-400 line-through">$55.00</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <span class="text-xs-text-gray-500">(150)</span>
+                </div>
+                 
+           </div>
+           <a href="#" class="block w-full py-1 text-white text-center bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add to Cart</a>
+          
+        </div>
+        <div class="bg-white shadow rounded group">
+           <div class="relative">
+               <img src="../images/images/products/product4.jpg" class="w-full">
+               <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 gap-3 opacity-0 group-hover:opacity-100 transition">
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="fas fa-search"></i>    
+                   </a>
+                   <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                       <i class="far fa-heart"></i>    
+                   </a>
+               </div>
+           </div>
+           <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                   <h4 class="uppercase font-bold text-xl mb-2 text-gray-800 hover: text-primary transition">guyer chair</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-primary text-xl font-semibold">$45.00</p>
+                    <p class="text-sm text-gray-400 line-through">$55.00</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <span class="text-xs-text-gray-500">(150)</span>
+                </div>
+                 
+           </div>
+           <a href="#" class="block w-full py-1 text-white text-center bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add to Cart</a>
+          
+        </div>
+    </div>
+          <!--product grid end-->
+    </div>
+    <!--product wrapper end-->
+    
+</div> 
+
+
+<!-- shop wrapper end -->
+
+
+</body>
+
+</html>
